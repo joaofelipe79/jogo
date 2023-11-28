@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #580909;
+    text-align: center;
+}
+
+#hangman-container {
+    width: 1000px;
+    height: 500px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#word-display {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#incorrect-letters {
+    margin-bottom: 20px;
+}
+
+#hangman-image {
+    height: calc(100% - 400px); 
+    background: url('hangman.png') center/contain no-repeat;
+    margin-bottom: 20px;
+}
+
+#game-over {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ff0000;
+    margin-bottom: 20px;
+}
+
+#reset-button {
+    padding: 15px;
+    background-color: #4caf50;
+    color: #000000;
+    border: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
