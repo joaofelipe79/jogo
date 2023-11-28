@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <title>Cadastro </title>
+  <style>
+  body{
+    background-color:rgb(187, 139, 81) ;
+  }
+  .custom-form {
+  margin-top: 100px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+hr {
+    height: 2px; 
+    background-color: #000000; 
+    border: none; 
+    margin-top: 20px; 
+    margin-bottom: 15px; 
+}
+h1{
+  margin-left: 95px;
+}
+
+  #linkpg2 {
+    font-size: 18px; 
+    color: #000000; 
+}
+
+p {
+    text-align: left; 
+}
+
+
+
+  </style>
+</head>
+<body>
+<h1 id="linkpg2">exercico 1</h1>
+<p>para acessar o exercico 2 clique<a href="ex2.html"> aqui</a></p>
+
+<div class="container custom-form">
+  <h1>Cadastro de usuario</h1>
+  <form id="myForm">
+    <div class="form-group">
+      <label for="nome">Nome:</label>
+      <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome" required>
+    </div>
+    <div class="form-group">
+<label for="email">E-mail</label>
+<input type="email" class="form-control" id="email"  name="email" placeholder="Digite seu endereço de e-mail" required>
+    </div>
+
+    <div class="form-group">
+      <label for="idade">Idade:</label>
+      <input type="number" class="form-control" id="idade" name="idade" placeholder="Informe sua idade" required>
+    </div>
+    <div class="form-group">
+      <label for="dataNascimento">Data de Nascimento:</label>
+      <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+  </div>
+<hr>
+    <div class="form-group">
+      <label>Gênero:</label>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="generoM" name="genero" value="Masculino">
+        <label class="form-check-label" for="generoM">Masculino</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="generoF" name="genero" value="Feminino">
+        <label class="form-check-label" for="generoF">Feminino</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" class="form-check-input" id="generoO" name="genero" value="Outro">
+        <label class="form-check-label" for="generoO">Outro</label>
+      </div>
+    </div>
+<hr>
+    <div class="form-group">
+      <label>Interesses:</label>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="interesseEsporte" name="interesses[]" value="Esporte">
+        <label class="form-check-label" for="interesseEsporte">Esporte</label>
+      </div>
+      <div class="form-check"> 
+      <input type="checkbox" class="form-check-input" id="interesseLeitura" name="interesses[]" value="leitura">
+      <label class="form-check-label" for="interesseLeitura">Leitura</label>
+      </div>
+      <div class="form-check">
+      <input type="checkbox" class="form-check-input" id="interesseJogos" name="interesses" value="jogos">
+      <label class="form-check-label" for="interesseJogos" name="interesses" >Jogos</label>
+      </div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="interesseMusica" name="interesses" value="Musica">
+        <label class="form-check-label" for="interesseMusica" name="interesses" >Musica</label>
+    </div>
+     <div>
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="interesseEstudar" name="interesses" value="Estudar">
+        <label class="form-check-label" for="interesseEstudar" name="interesses" >Estudar</label>
+
+     </div>
+
+    </div>
+   <hr>
+    <button type="submit" class="btn btn-primary">Enviar</button>
+  </form>
+</div>
+
+<script src="script.js"  defer></script>
+<link rel="stylesheet" href="css.trab/css">
+</body>
+</html>
